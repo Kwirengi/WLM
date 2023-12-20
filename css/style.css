@@ -1,0 +1,283 @@
+body{background-color:rgb(255,255,230);}
+/*----------------------------------------- Links styling ------------------------------------------------*/
+
+.content{
+ background:rgb(255,255,255);
+ width:1000px;
+ height:3000px;
+ box-shadow: 0px 4px 32px 0px rgba(0,0,255,1);
+ }
+
+.head{top:0;}
+
+.container{
+	width:1000px;
+	height:2700px;
+	}
+
+#left{
+	margin-left:10px;
+	width:630px; 
+	height:default;
+	position:absolute;
+	padding-top:0px;
+	font-size:20px; 
+	text-align:justify;
+	float:left;
+ }
+ 
+#right{
+	width:320px;
+	margin-right:10px;
+	float:right;
+	color: GrayText;
+	text-align: justify;
+	background-color:#fff;
+ }
+ 
+ 
+#more {display: none;}
+
+
+/* ========================Unmove navigation ========================*/
+
+.nav {
+  position: absolute;
+  width: 1000px;
+  float: left;
+}
+#navigation{top:90; }
+
+      ul {
+		list-style:none;
+        padding-left: 0px;
+        list-style: none;
+        background:rgb(255,255,255);
+		color:green;
+    }
+    ul li {
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+		font-family:Segoe UI Light;
+		
+    }
+    ul li a {
+		font-family:calibri;
+        display: block;
+        padding: 5px 30px;
+        color: #000;
+        text-decoration: none;
+    }
+		a{text-decoration:none;}
+		a:visited{color:blue;}
+		a:active{color:pink;}
+		a:hover {color: #000;}
+		
+		
+		ul li:hover {background:rgb(230,230,230);}
+		
+    ul li ul.dropdown {
+		background:rgb(255,255,255);
+        min-width: 100%;     /* Set width of the dropdown */
+        display: none;
+        position: absolute;
+        z-index: 999;
+		box-shadow: 0px 12px 12px 0px rgba(0,0,0,1);
+    }
+    ul li:hover ul.dropdown {
+
+        display: block;      /* Display the dropdown */
+    }
+    ul li ul.dropdown li {
+
+        display: block;
+    }
+
+	/* ==============Ordered list styling ==================*/
+	ol{list-style: none; }
+
+
+	    ol li a {
+		font-family:calibri;
+        display: block;
+        padding: 0px;
+        color: green;
+    }
+
+
+
+/*-----slide show  ----------------------------------------*/
+	.slide {
+  width: 995px;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
+}
+.slide > div {
+  width: 100%;
+  height: 100%;
+  background-size: 1000px 350px;
+  position: absolute;
+  animation: slide 25s infinite;
+  opacity: 0;
+}
+.slide > div:nth-child(2) {
+  animation-delay: 5s;
+}
+.slide > div:nth-child(3) {
+  animation-delay: 10s;
+}
+.slide > div:nth-child(4) {
+  animation-delay: 15s;
+}
+.slide > div:nth-child(5) {
+  animation-delay: 20s;
+}
+
+@keyframes slide {
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    transform: scale(1.15);
+  }
+}
+
+section{padding-top:30px; padding-left:0px;}
+
+
+	#right>marquee{height:400; padding-left:50PX;}
+	.style>li>a{list-style: number; color: green; font-size:15px;}
+	
+h1{font-family:calibri; color: #333; font-size:2em;}
+h2{font-family:calibri; font-style:none; font-weight:bold; color: #333; }
+h3{	color:#333; font-family:calibri; font-size:1.5em; float:center;}
+h4{font-family:segoe ul light; font-size:em; font-style:none; font-weight:none; text-align:justify; color:#333; text-decoration:none;}
+marquee>a>img:hover{opacity: 0.6;}
+
+
+.box-container {
+  padding-left:13px;
+  position: relative;
+  width: 330px;
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  perspective: 500px;
+
+}
+.box-container .box {
+  position: relative;
+  width: 330px;
+  height: 380px;
+  background: #000;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  margin-right: 15px;
+  margin-top: 45px;
+}
+.box-container .box:hover {
+  transform: rotateY(360deg) scale(1.5);
+  z-index: 1;
+  float:center;
+  box-shadow: 0 25px 40px rgba(0,0,0,0.8);
+}
+.box-container .box .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.box-container .box .imgBx:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,#f00,#000);
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s;
+  mix-blend-mode: multiply;
+}
+.box-container .box:hover .imgBx:before {
+  opacity: 1;
+}
+.box-container .box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.box-container .box .box-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  padding: 5px;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+.box-container .box .box-content h2 {
+  color: blue;
+  transition: 0.5s;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 20px;
+  transform: translateY(200px);
+  transition-delay: 0.3s;
+}
+.box-container .box:hover .box-content h2 {
+  transform: translateY(0px);
+}
+.box-container .box .box-content p {
+  color: #fff;
+  text-align: center;
+  transition: 0.5s;
+  font-size: 14px;
+  transform: translateY(200px);
+  transition-delay: 0.5s;
+}
+.box-container .box:hover .box-content p {
+  transform: translateY(0px);
+}
+
+.title{text-align:center;}
+.link{background-color: #fff; padding-left: 20px; font-size: 1em;}
+	#margin{background-color:#ddd; width:300px; height:2px;}
+	#line-height{background-color:#ddd; width:650px; height:1px;}
+	#line-through{background-color:#ddd; width:1px; height:3000px;}
+	#bible{padding-left: 10px;}
+		b{font-family: tahoma; font-size:1em; font-style:none; font-weight:none; text-align:left; color:green;}
+		button{border:none; color:green; background:yellow; font-family:calibri; font-style: italic; font-size:15px;}
+		p{font-family: calibri; font-size:1em; color:#555; text-align:justify;}
+		strong{font-weight: bold; font-size: 1.3em; text-align: left; color:#333; font-family: calibri; float:left;}
+
+
+
+/* ==============================    footer social-medias    ============================== */
+.footer{width: 1000px; height:220px;  background:rgb(255,255,230); float:center;}
+.medium{width: 1000px; height:210px; background-color:#999;}
+	#facebook{width: 333px; height:200px; float: left; padding-top:0px; font-family:calibri;}
+	#twiter{width: 333px; height:200px; float: left;  padding-top:0px; font-family:calibri;}
+	#youtube{width: 334px; height:200px; float: left;  padding-top:0px; font-family:calibri;}
+.lime{width: 1000px; height: 50px; background-color: #555; font-family: calibri; text-align: center-middle;}
