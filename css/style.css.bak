@@ -1,0 +1,861 @@
+*{
+}
+body{background: rgb(255,200,255);}
+
+
+
+/*----------------------------------------- content ------------------------------------------------*/
+.content{
+	width: 80%;
+	margin: auto;
+	background: #fff;
+	box-shadow: 0px 4px 32px 0px rgba(0,0,255,3);
+ }
+ @media screen and (max-width: 600px) {
+	 .content{
+		width: 100%;
+		color: #000;
+		background-color: #fff;
+		box-shadow: 0px 4px 32px 0px rgba(0,0,0,3);
+		box-shadow: none;
+	}
+}
+ 
+ 
+ /*-------------------------- Navigation -------------------------------------------------*/
+#bg-color{
+	background-color: rgba(0,255,0,0.5);
+}
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+	color: green;
+  font-size: 18px;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+.tab button:hover {
+	background-color: rgba(255,255,0);
+}
+.tabcontent{transition: 0.3s;}
+
+
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: rgba(0,200,0);
+}
+@media screen and (max-width: 600px) {
+	.tab button {
+		padding: 7px 8px;
+		font-size: 11px;
+	}
+}
+.logo{
+	float: right;
+	margin-right: 0.3%;
+}
+.logo img{
+	width: 50px;
+		height: 50px;
+}
+
+@media screen and (max-width: 600px) {
+	.logo img{
+		width: 25px;
+		height: 25px;
+	}
+}
+
+
+
+/*-------------------------------slide show  ----------------------------------------*/
+.slide {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
+}
+@media screen and (max-width: 600px) {
+	.slide {
+  width: 100%;
+  height: 150px;
+	}
+}
+
+.slide > div {
+  width: 100%;
+  height: 100%;
+  background-size: 100% 350px;
+  position: absolute;
+  animation: slide 25s infinite;
+  opacity: 0;
+}
+@media screen and (max-width: 600px) {
+	.slide > div {
+  width: 100%;
+  height: 100%;
+   background-size: 100% 150px;
+	}
+}
+
+
+.slide > div:nth-child(2) {
+  animation-delay: 5s;
+}
+.slide > div:nth-child(3) {
+  animation-delay: 10s;
+}
+.slide > div:nth-child(4) {
+  animation-delay: 15s;
+}
+.slide > div:nth-child(5) {
+  animation-delay: 20s;
+}
+@keyframes slide {
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    transform: scale(1.15);
+  }
+}
+
+
+
+/*---------------------------------  content  ---------------------------------------*/
+.row{
+	display: flex;
+	justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+.row{
+		display: block;
+	}
+}
+
+.Container{
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+
+.Container h1{
+	margin-top: 5%;
+	color: rgb(130,0,0);
+	font-size: 60px;
+	font-weight: 600;
+	text-shadow: 20px;
+}
+
+.Container p{
+	margin-top: -3%;
+	font-size: 25px;
+	font-weight: 100;
+	color: #555;
+	text-align: justify;
+}
+@media screen and (max-width: 600px) {
+	.container h1{
+		font-size: 25px;
+	}
+	.container p{
+		font-size: 15px;
+	}
+}
+
+
+
+
+/*---------------------------------  central body  ---------------------------------------*/
+.top-left{
+	flex-basis: 48%;
+	border-radius: 10px;
+	padding: 20px 0px;
+	transition: 1s;
+	cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+.top-left{
+	flex-basis: 30%;
+	padding: 14px 2px;
+	margin-left: 2%;
+}
+}
+
+.top-left img{
+	border-radius: 10px;
+	width: 100%;
+	height: auto;
+}
+@media screen and (max-width: 600px) {
+.top-left img{
+	border-radius: 10px;
+	width: 100%;
+	height: autopx;
+}
+}
+
+
+
+.top-left strong{
+	font-family: 'poppins', sans-serif;
+	font-size: 30px;
+	color: #666;
+}
+.top-left p{
+	margin-top: 5%;
+	font-size: 20px;
+	font-weight: 300;
+	color: #000;
+	line-height: 25px;
+	text-align: justify;
+}
+.top-left b{
+	font-size: 18px;
+	color: #000;
+	text-align: justify;
+}
+.top-left:hover{
+	background: rgba(255,0,255,0.3);
+	box-shadow: 0 0 20px 0px rgba(0,0,0,5);
+	transition: 2s;
+}
+@media screen and (max-width: 600px) {
+.top-left strong{
+	font-size: 25px;
+}
+.top-left p{
+	font-size: 15px;
+}
+.top-left b{
+	font-size: 17px;
+}
+
+
+i{
+	color: #555;
+}
+}
+
+
+
+/*-----------------------------------  testmonials  ---------------------------------------*/
+.testmonials{
+	width: 81%;
+	margin: auto;
+	text-align: center;
+
+}
+
+.testmonials img{
+	width: 15%;
+	height: 15%;
+	margin-left: 15px;
+	margin-right: 20px;
+	border-radius: 50%;
+}
+
+.testmonials h1{
+	text-align: center;
+	font-size: 40px;
+	color: blue;
+}
+
+.testmonials p{
+	font-size: 20px;
+	color: blue;
+}
+
+.testmonials-col{
+	width: 80%;
+	border-radius: 10px;
+	margin-bottom:3%;
+	text-align: left;
+	background: rgb(255,255,230);
+	cursor: pointer;
+    display: flex;
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+}
+
+.testmonials-col p{
+	font-size: 20px;
+	font-style: italic;
+	color: green;
+	margin: auto;
+}
+
+.testmonials-col h3{
+	font-size: 20px;
+	color: blue;
+}
+.testmonials-col:hover{
+color: yellow;
+background: rgba(255,0,255,0.3);
+box-shadow: 0 0 20px 0px rgba(255,0,0,0.9);
+transition: 1s;
+}
+
+
+
+/*-----------------------------------  Branches  ---------------------------------------*/
+.Branches{
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+
+.Branches h1{
+	color: rgb(130,0,0);
+	font-size: 60px;
+	font-weight: 600;
+	text-shadow: 20px;
+}
+
+.Branches p{
+	text-align: justify;
+	font-family: 'poppins', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	color: #333;
+}
+
+.Branch-col{
+	flex-basis: 31%;
+	border-radius: 10px;
+	margin-bottom:5%;
+	text-align: center;
+}
+
+.Branch-col img{
+	width: 100%;
+	height: 40%;
+	border-radius: 10px;
+}
+
+
+
+.Branch-col p{
+	text-align: justify;
+	font-family: calibry;
+	font-size: 18px;
+	font-weight: 300;
+	color: #333;
+}
+
+.Branch-col h3{
+	margin-top: 16px;
+	margin-bottom: 15px;
+	text-align: center;
+	color: #333;
+	font-size: 30px;
+}
+
+@media(max-width: 700px){
+	.Branch{
+		flex-direction: column;
+	}
+	
+	.Branches h1{
+		font-size: 40px;
+		font-weight: 600;
+	}
+	.Branches p{
+		font-size: 17px;
+		font-weight: 300;
+		text-align: justify;
+		font-family: calibri;
+		line-height: 22px;
+	}
+}
+
+
+
+
+/*-----------------------------------  Project  ---------------------------------------*/
+.Project{
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+
+.Project h1{
+	color: rgb(130,0,0);
+	font-size: 40px;
+	font-weight: 600;
+	text-shadow: 20px;
+}
+
+.Project p{
+	text-align: justify;
+	font-family: 'poppins', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	color: #333;
+}
+
+.Project-col{
+	flex-basis: 31%;
+	border-radius: 10px;
+	margin-bottom:5%;
+	text-align: center;
+}
+
+.Project-col img{
+	width: 100%;
+	height: 40%;
+	border-radius: 10px;
+}
+
+
+
+.Project-col p{
+	text-align: justify;
+	font-family: calibry;
+	font-size: 18px;
+	font-weight: 300;
+	color: #333;
+}
+
+.Project-col h3{
+	margin-top: 16px;
+	margin-bottom: 15px;
+	text-align: center;
+	color: #333;
+	font-size: 30px;
+}
+
+@media(max-width: 700px){
+	.Project{
+		flex-direction: column;
+	}
+	
+	.Project h1{
+		font-size: 40px;
+		font-weight: 600;
+	}
+	.Project p{
+		font-size: 17px;
+		font-weight: 300;
+		text-align: justify;
+		font-family: calibri;
+		line-height: 22px;
+	}
+}
+
+
+
+
+
+/*-----------------------------------  Kuboresha Ibada  ---------------------------------------*/
+.Religion{
+margin: auto;
+	width: 100%;
+	height: 30%;
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(..//staticimg/header.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+
+.Religion{
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+
+.Religion h1{
+	color: rgb(130,0,0);
+	font-size: 40px;
+	font-weight: 600;
+	text-shadow: 20px;
+}
+
+.Religion p{
+	text-align: justify;
+	font-family: 'poppins', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	color: #333;
+}
+
+.Religion-col{
+	flex-basis: 31%;
+	border-radius: 10px;
+	margin-bottom:5%;
+	text-align: center;
+}
+
+.Religion-col img{
+	width: 100%;
+	height: 40%;
+	border-radius: 10px;
+}
+
+
+
+.Religion-col p{
+	text-align: justify;
+	font-family: calibry;
+	font-size: 18px;
+	font-weight: 300;
+	color: #333;
+}
+
+.Religion-col h3{
+	margin-top: 16px;
+	margin-bottom: 15px;
+	text-align: center;
+	color: #333;
+	font-size: 30px;
+}
+
+@media(max-width: 700px){
+	.Religion{
+		flex-direction: column;
+	}
+	
+	.Religion h1{
+		font-size: 40px;
+		font-weight: 600;
+	}
+	.Religion p{
+		font-size: 17px;
+		font-weight: 300;
+		text-align: justify;
+		font-family: calibri;
+		line-height: 22px;
+	}
+}
+
+
+
+
+
+.hero-btn{
+	margin-top: 10%;
+	display: inline-block;
+	text-decoration: none;
+	color: #777;
+	border: 1px solid #ddd;
+	padding: 12px 30px;
+	font-size: 20px;
+	background: #ddd;
+	position: relative;
+	cursor: pointer;
+	border-radius: 10px;
+	float: center;
+}
+
+.hero-btn:hover{
+	background: rgba(0,100,0,0.5);
+	transition: 1s;
+	border: 1px solid yellow;
+	color: yellow;
+	font-size: 20px;
+}
+
+
+
+
+
+
+/*--------------------------footer -------------------------------------------------
+------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------*/
+.footer{
+	margin: auto;
+	width: 100%;
+	height: 30%;
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(..//staticimg/header.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.footer p{
+	padding-top: 30px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	font-family: 'poppins', sans-serif;
+}
+.s-media{
+	width: 70%;
+	margin-left: auto;
+}
+.fa{
+	color: yellow;
+	padding: 30px;
+	font-size: 50px;
+	cursor: pointer;
+}
+.fa hover{
+	color: red;
+}
+
+
+
+
+
+/* ------------------------------  contact ------------------------------ */
+* {
+  box-sizing: border-box;
+  font-family: calibri;
+}
+.button{margin-top: 0.5%;}
+
+
+
+/* Style the container/contact section */
+.container-crt{
+  border-radius: 10px;
+  background-color: dodgerblue;
+  padding: 0px;
+  margin-top: 0%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.space{
+	height: 5%;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: yellow;
+  color: green;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+input[type=submit]:hover {
+  background-color: red;
+  color: yellow;
+}
+
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: -3%;
+  padding: 20px;
+}
+@media screen and (max-width: 600px) {
+  column {
+  margin-top: -5%;
+  padding: 20px;
+}
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.cr-contact{
+	margin-top: 3%;
+	border: 1px solid #ccc;
+	background-color: yellow;
+	border-radius: 10px;
+}
+.cr-contact p{
+	font-size: 17px;
+	margin-left:25%;
+	color: blue;
+}
+.cr-contact h1{
+	margin-top: 2%;
+	font-size: 30px;
+	text-align: center;
+	color: #f00;
+}
+@media screen and (max-width: 600px) {
+	.cr-contact p{
+		margin-left:2%;
+	}
+}
+
+
+
+/*-------------------------------------- Vission/Mission  -----------------------------*/
+.container-cdf{
+	margin-top: -40px;
+	border-radius: 10px;
+	width: 90%;
+	height: 75%;
+	text-align: center;
+	background-color: dodgerblue;
+    margin-left: 5%;
+	margin-right: 5%;
+}
+.container-cdf h1{
+	padding-top: 20px;
+	font-size: 50px;
+	color: #fff;
+}
+.container-cdf p{
+	margin-top: -20px;
+	font-style: italic;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+	.container-cdf{
+	margin-top: -10px;
+	}
+	.container-cdf h1{
+	font-size: 20px;	
+	}
+	.container-cdf p{
+	font-size: 12px;
+	text-align: justify;
+	}
+}
+
+
+.row-col{
+	width: 80%;
+	margin: auto;
+}
+@media screen and (max-width: 600px) {
+	.row-col{
+	width: 100%;
+	align-content: center;
+	margin-right: -0.7%;
+}
+}
+
+fieldset{
+	width: 90%;
+	height: 55%;
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(..//staticimg/Kayombo1.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	border: none;
+	box-shadow: 0 0 25px 0px rgba(255,255,255,0.9);
+}
+@media screen and (max-width: 600px) {
+fieldset{
+	width: 98%;
+}
+}
+
+fieldset:hover{
+	box-shadow: 0 0 25px 0px rgba(255,255,0,0.9);
+	border-color: #000;
+	cursor: pointer;
+}
+.Discription{
+	font-size: 25px;
+	font-weight: 300;
+	color: #fff;
+	text-align: justify;
+	margin-left:3%;
+	padding: 50px;
+}
+@media screen and (max-width: 600px) {
+.Discription{
+	font-size: 20px;
+	margin-left:0%;
+	text-align: justify;
+	padding: 10px;
+}
+}
+
+
+
+
+/*-----------------------------  About us  -------------------------------------*/
+
+.left{
+	width:98%;
+	margin-top:-10px; 
+	font-size:20px;
+	text-align:justify;
+	color:#555;
+	font-weight: 300;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 40px;
+ }
+ @media screen and (max-width: 600px) {
+	 .left{
+	 font-size: 13px;
+	 padding: 10px;
+	 }
+ }
+ 
+ 
+ .left-top h2{
+	 font-family: Arial, Helvetica, sans-serif;
+	 font-size:50px;
+	 text-align: center;
+ }
+ @media screen and (max-width: 600px) {
+	.left-top h2{
+		font-size:25px;
+	}
+}
+ 
+ .left-top img{
+	 border-radius: 10px;
+	 width: 100%;
+	 height: 700px;
+ }
+ 
+@media screen and (max-width: 600px) {
+	.left img{
+	width: 100%;
+	 height: 20%;
+	}
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ font{font-family: Arial, Helvetica, sans-serif;}
+#more {display: none;}
+button{border:none; color:green; background:yellow; font-family:calibri; font-size:15px; cursor: pointer;}
+left button{border:none; color:green; background:yellow; font-family:calibri; font-style: italic; font-size:15px;}
